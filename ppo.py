@@ -108,6 +108,7 @@ class PPO:
 
             mini_batch = (obs, action, log_prob, target, advantage)
             data.append(mini_batch)
+
         return data
 
     def update(self):
